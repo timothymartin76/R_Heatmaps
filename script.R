@@ -25,3 +25,6 @@ zp1 <- zp1 + scale_x_discrete(expand = c(0, 0))
 zp1 <- zp1 + scale_y_discrete(expand = c(0, 0))
 zp1 <- zp1 + theme_bw()
 print(zp1)
+
+##puth to plot_ly
+ggplotly(zp1) %>% config(displayModeBar = F)
