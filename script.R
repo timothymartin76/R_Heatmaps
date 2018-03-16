@@ -1,7 +1,7 @@
 ##You will need these packages
-require(ggplot2)
-require(reshape2)
-require(RColorBrewer)
+library(ggplot2)
+library(reshape2)
+library(RColorBrewer)
 
 ## read in the file
 mydata<- read.csv("blocked_driveway.csv", header=T, sep=',')
