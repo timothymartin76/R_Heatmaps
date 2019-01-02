@@ -6,7 +6,7 @@ library(RColorBrewer)
 ## read in the file
 mydata<- read.csv("blocked_driveway.csv", header=T, sep=',')
 
-## convert to long form using reshape2 package
+## convert to long form using reshape package
 md2<- melt(mydata, id=c("Time"))
 View(md2)
 
